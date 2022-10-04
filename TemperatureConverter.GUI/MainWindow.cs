@@ -2,6 +2,9 @@ using TemperatureConverter.Models;
 
 namespace TemperatureConverter.GUI
 {
+    /// <summary>
+    /// This class contains the logic and inialization-methods for my TemperatureConverter App.
+    /// </summary> 
     public partial class MainWindow : Form
     {
         Methoden methoden = new Methoden();
