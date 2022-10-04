@@ -38,8 +38,9 @@
             this.rbFtoC = new System.Windows.Forms.RadioButton();
             this.rbCtoF = new System.Windows.Forms.RadioButton();
             this.btnClose = new System.Windows.Forms.Button();
-            this.txtTemperature = new System.Windows.Forms.TextBox();
+            this.numTemperature = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTemperature)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTemperature
@@ -47,9 +48,9 @@
             this.lblTemperature.AutoSize = true;
             this.lblTemperature.Location = new System.Drawing.Point(32, 33);
             this.lblTemperature.Name = "lblTemperature";
-            this.lblTemperature.Size = new System.Drawing.Size(96, 20);
+            this.lblTemperature.Size = new System.Drawing.Size(88, 20);
             this.lblTemperature.TabIndex = 0;
-            this.lblTemperature.Text = "Temperature:";
+            this.lblTemperature.Text = "Temperatur:";
             // 
             // lblTempertureUnit
             // 
@@ -149,20 +150,20 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // txtTemperature
+            // numTemperature
             // 
-            this.txtTemperature.Location = new System.Drawing.Point(133, 33);
-            this.txtTemperature.Name = "txtTemperature";
-            this.txtTemperature.Size = new System.Drawing.Size(70, 27);
-            this.txtTemperature.TabIndex = 6;
-            this.txtTemperature.TextChanged += new System.EventHandler(this.txtTemperature_TextChanged);
+            this.numTemperature.Location = new System.Drawing.Point(134, 31);
+            this.numTemperature.Name = "numTemperature";
+            this.numTemperature.Size = new System.Drawing.Size(70, 27);
+            this.numTemperature.TabIndex = 7;
+            this.numTemperature.ValueChanged += new System.EventHandler(this.numTemperature_ValueChanged);
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(314, 344);
-            this.Controls.Add(this.txtTemperature);
+            this.Controls.Add(this.numTemperature);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblConvertedUnit);
@@ -173,6 +174,7 @@
             this.Text = "TemperatureConverter";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTemperature)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +192,6 @@
         private RadioButton rbFtoC;
         private RadioButton rbCtoF;
         private Button btnClose;
-        private TextBox txtTemperature;
+        private NumericUpDown numTemperature;
     }
 }

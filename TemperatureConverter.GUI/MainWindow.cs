@@ -7,14 +7,14 @@ namespace TemperatureConverter.GUI
             InitializeComponent();
         }
 
-        private void txtTemperature_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rbCtoF_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbCtoF.Checked)
+            {
+                lblTempertureUnit.Text = "°C";
+                lblConvertedUnit.Text = "°F";
+                lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value * 9 / 5 + 32);
+            }
         }
 
         private void rbFtoC_CheckedChanged(object sender, EventArgs e)
@@ -35,6 +35,11 @@ namespace TemperatureConverter.GUI
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void numTemperature_ValueChanged(object sender, EventArgs e)
+        {
+            rbCtoF_CheckedChanged(sender, e);
         }
     }
 }
