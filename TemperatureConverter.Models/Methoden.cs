@@ -1,10 +1,11 @@
-﻿
+﻿using System.Reflection.Emit;
+
 namespace TemperatureConverter.Models
 {
     /// <summary>
     /// This Class contains Methods that were designed to execute the conversion between the different Temperature Units.
     /// </summary> 
-    public class Methoden 
+    public class Methoden
     {
         /// CtoF has a built in Logic for the Converstion between Celsius and Fahrenheit.
         /// <param name="value">Used to transfer the UserInputValue into the Method.</param>

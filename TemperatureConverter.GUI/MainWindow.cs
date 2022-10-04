@@ -33,9 +33,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbCtoF.Checked)
             {
-                numTemperature.Minimum = (decimal) -273.15;
-                lblTempertureUnit.Text = "°C";
-                lblConvertedUnit.Text = "°F";
+                GuiTextFilling((decimal)-273.15, "°C", "°F");
                 lblConvertedTemperature.Text = methoden.CtoF(numTemperature.Value);
             }
         }
@@ -52,9 +50,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbFtoC.Checked)
             {
-                numTemperature.Minimum = (decimal) -459;
-                lblTempertureUnit.Text = "°F";
-                lblConvertedUnit.Text = "°C";
+                GuiTextFilling((decimal)-459, "°F", "°C");
                 lblConvertedTemperature.Text = methoden.FtoC(numTemperature.Value);
             }
         }
@@ -71,9 +67,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbCtoK.Checked)
             {
-                numTemperature.Minimum = (decimal)-273.15;
-                lblTempertureUnit.Text = "°C";
-                lblConvertedUnit.Text = "°K";
+                GuiTextFilling((decimal)-273.15, "°C", "°K");
                 lblConvertedTemperature.Text = methoden.CtoK(numTemperature.Value);
             }
         }
@@ -90,9 +84,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbKtoC.Checked)
             {
-                numTemperature.Minimum = 0;
-                lblTempertureUnit.Text = "°K";
-                lblConvertedUnit.Text = "°C";
+                GuiTextFilling(0, "°K", "°C");
                 lblConvertedTemperature.Text = methoden.KtoC(numTemperature.Value);
             }
         }
@@ -118,6 +110,19 @@ namespace TemperatureConverter.GUI
             rbFtoC_CheckedChanged(sender, e);
             rbCtoK_CheckedChanged(sender, e);
             rbKtoC_CheckedChanged(sender, e);
+        }
+
+        /// <summary>
+        /// This Method was created to reduce redundance in the Code and remove some lines of Code.
+        /// </summary>
+        /// <param name="tempMin"></param>
+        /// <param name="tempUnit"></param>
+        /// <param name="tempConvertedUnit"></param>
+        private void GuiTextFilling(decimal tempMin, string tempUnit, string tempConvertedUnit)
+        {
+            numTemperature.Minimum = tempMin;
+            lblTempertureUnit.Text = tempUnit;
+            lblConvertedUnit.Text = tempConvertedUnit;
         }
     }
 }
