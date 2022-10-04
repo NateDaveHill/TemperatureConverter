@@ -101,6 +101,7 @@
             this.rbKtoC.TabStop = true;
             this.rbKtoC.Text = "Kevin nach Celsius";
             this.rbKtoC.UseVisualStyleBackColor = true;
+            this.rbKtoC.CheckedChanged += new System.EventHandler(this.rbKtoC_CheckedChanged);
             // 
             // rbCtoK
             // 
@@ -112,6 +113,7 @@
             this.rbCtoK.TabStop = true;
             this.rbCtoK.Text = "Celsius nach Kevin";
             this.rbCtoK.UseVisualStyleBackColor = true;
+            this.rbCtoK.CheckedChanged += new System.EventHandler(this.rbCtoK_CheckedChanged);
             // 
             // rbFtoC
             // 
@@ -123,6 +125,7 @@
             this.rbFtoC.TabStop = true;
             this.rbFtoC.Text = "Fahrenheit nach Celsius";
             this.rbFtoC.UseVisualStyleBackColor = true;
+            this.rbFtoC.CheckedChanged += new System.EventHandler(this.rbFtoC_CheckedChanged);
             // 
             // rbCtoF
             // 
@@ -134,6 +137,7 @@
             this.rbCtoF.TabStop = true;
             this.rbCtoF.Text = "Celsius nach Fahrenheit";
             this.rbCtoF.UseVisualStyleBackColor = true;
+            this.rbCtoF.CheckedChanged += new System.EventHandler(this.rbCtoF_CheckedChanged);
             // 
             // btnClose
             // 
@@ -143,6 +147,7 @@
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Beenden";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtTemperature
             // 
@@ -150,6 +155,7 @@
             this.txtTemperature.Name = "txtTemperature";
             this.txtTemperature.Size = new System.Drawing.Size(70, 27);
             this.txtTemperature.TabIndex = 6;
+            this.txtTemperature.TextChanged += new System.EventHandler(this.txtTemperature_TextChanged);
             // 
             // MainWindow
             // 
