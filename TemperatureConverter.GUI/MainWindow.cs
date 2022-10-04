@@ -29,7 +29,7 @@ namespace TemperatureConverter.GUI
                 numTemperature.Minimum = (decimal) -459;
                 lblTempertureUnit.Text = "°F";
                 lblConvertedUnit.Text = "°C";
-                lblConvertedTemperature.Text = String.Format("{0:0.000}", (numTemperature.Value - 32) * 5 / 9);
+                lblConvertedTemperature.Text = methoden.FtoC(numTemperature.Value);
             }
         }
 
