@@ -6,5 +6,6 @@ namespace TemperatureConverter.GUI
         {
             InitializeComponent();
         }
+
     }
 }
