@@ -29,7 +29,12 @@ namespace TemperatureConverter.GUI
 
         private void rbCtoK_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (rbCtoK.Checked)
+            {
+                lblTempertureUnit.Text = "°C";
+                lblConvertedUnit.Text = "°K";
+                lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value + (decimal)273.15);
+            }
         }
 
         private void rbKtoC_CheckedChanged(object sender, EventArgs e)
@@ -46,6 +51,7 @@ namespace TemperatureConverter.GUI
         {
             rbCtoF_CheckedChanged(sender, e);
             rbFtoC_CheckedChanged(sender, e);
+            rbCtoK_CheckedChanged(sender, e);
         }
     }
 }
