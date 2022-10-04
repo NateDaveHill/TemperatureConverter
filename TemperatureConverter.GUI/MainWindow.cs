@@ -71,6 +71,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbCtoK.Checked)
             {
+                numTemperature.Minimum = (decimal)-273.15;
                 lblTempertureUnit.Text = "°C";
                 lblConvertedUnit.Text = "°K";
                 lblConvertedTemperature.Text = methoden.CtoK(numTemperature.Value);
