@@ -33,11 +33,11 @@
             this.lblConvertedTemperature = new System.Windows.Forms.Label();
             this.lblConvertedUnit = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rbKtoC = new System.Windows.Forms.RadioButton();
+            this.rbCtoK = new System.Windows.Forms.RadioButton();
+            this.rbFtoC = new System.Windows.Forms.RadioButton();
+            this.rbCtoF = new System.Windows.Forms.RadioButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.txtTemperature = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -80,69 +80,69 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(49, 140);
+            this.groupBox1.Controls.Add(this.rbKtoC);
+            this.groupBox1.Controls.Add(this.rbCtoK);
+            this.groupBox1.Controls.Add(this.rbFtoC);
+            this.groupBox1.Controls.Add(this.rbCtoF);
+            this.groupBox1.Location = new System.Drawing.Point(32, 106);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 185);
+            this.groupBox1.Size = new System.Drawing.Size(254, 172);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Umrechnung";
             // 
-            // radioButton4
+            // rbKtoC
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(69, 129);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(117, 24);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbKtoC.AutoSize = true;
+            this.rbKtoC.Location = new System.Drawing.Point(21, 125);
+            this.rbKtoC.Name = "rbKtoC";
+            this.rbKtoC.Size = new System.Drawing.Size(150, 24);
+            this.rbKtoC.TabIndex = 3;
+            this.rbKtoC.TabStop = true;
+            this.rbKtoC.Text = "Kevin nach Celsius";
+            this.rbKtoC.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbCtoK
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(64, 103);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(117, 24);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbCtoK.AutoSize = true;
+            this.rbCtoK.Location = new System.Drawing.Point(21, 95);
+            this.rbCtoK.Name = "rbCtoK";
+            this.rbCtoK.Size = new System.Drawing.Size(150, 24);
+            this.rbCtoK.TabIndex = 2;
+            this.rbCtoK.TabStop = true;
+            this.rbCtoK.Text = "Celsius nach Kevin";
+            this.rbCtoK.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbFtoC
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(51, 71);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(117, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbFtoC.AutoSize = true;
+            this.rbFtoC.Location = new System.Drawing.Point(21, 65);
+            this.rbFtoC.Name = "rbFtoC";
+            this.rbFtoC.Size = new System.Drawing.Size(182, 24);
+            this.rbFtoC.TabIndex = 1;
+            this.rbFtoC.TabStop = true;
+            this.rbFtoC.Text = "Fahrenheit nach Celsius";
+            this.rbFtoC.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbCtoF
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(40, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(117, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbCtoF.AutoSize = true;
+            this.rbCtoF.Location = new System.Drawing.Point(21, 35);
+            this.rbCtoF.Name = "rbCtoF";
+            this.rbCtoF.Size = new System.Drawing.Size(182, 24);
+            this.rbCtoF.TabIndex = 0;
+            this.rbCtoF.TabStop = true;
+            this.rbCtoF.Text = "Celsius nach Fahrenheit";
+            this.rbCtoF.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnClose
             // 
-            this.button1.Location = new System.Drawing.Point(133, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClose.Location = new System.Drawing.Point(32, 284);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(254, 29);
+            this.btnClose.TabIndex = 5;
+            this.btnClose.Text = "Beenden";
+            this.btnClose.UseVisualStyleBackColor = true;
             // 
             // txtTemperature
             // 
@@ -155,9 +155,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 446);
+            this.ClientSize = new System.Drawing.Size(314, 344);
             this.Controls.Add(this.txtTemperature);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblConvertedUnit);
             this.Controls.Add(this.lblConvertedTemperature);
@@ -179,11 +179,11 @@
         private Label lblConvertedTemperature;
         private Label lblConvertedUnit;
         private GroupBox groupBox1;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private Button button1;
+        private RadioButton rbKtoC;
+        private RadioButton rbCtoK;
+        private RadioButton rbFtoC;
+        private RadioButton rbCtoF;
+        private Button btnClose;
         private TextBox txtTemperature;
     }
 }
