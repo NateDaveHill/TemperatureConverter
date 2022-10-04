@@ -12,5 +12,10 @@ namespace TemperatureConverter.Models
         {
             return String.Format("{0:0.000}", (value - 32) * 5 / 9);
         }
+
+        public string CtoK(decimal value)
+        {
+            return Convert.ToString(value + (decimal)273.15);
+        }
     }
 }

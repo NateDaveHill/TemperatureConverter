@@ -39,7 +39,7 @@ namespace TemperatureConverter.GUI
             {
                 lblTempertureUnit.Text = "°C";
                 lblConvertedUnit.Text = "°K";
-                lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value + (decimal)273.15);
+                lblConvertedTemperature.Text = methoden.CtoK(numTemperature.Value);
             }
         }
 
