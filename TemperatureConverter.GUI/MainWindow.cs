@@ -11,6 +11,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbCtoF.Checked)
             {
+                numTemperature.Minimum = (decimal) -273.15;
                 lblTempertureUnit.Text = "°C";
                 lblConvertedUnit.Text = "°F";
                 lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value * 9 / 5 + 32);
@@ -21,6 +22,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbFtoC.Checked)
             {
+                numTemperature.Minimum = (decimal) -459;
                 lblTempertureUnit.Text = "°F";
                 lblConvertedUnit.Text = "°C";
                 lblConvertedTemperature.Text = String.Format("{0:0.000}", (numTemperature.Value - 32) * 5 / 9);
@@ -41,6 +43,7 @@ namespace TemperatureConverter.GUI
         {
             if (rbKtoC.Checked)
             {
+                numTemperature.Minimum = 0;
                 lblTempertureUnit.Text = "°K";
                 lblConvertedUnit.Text = "°C";
                 lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value - (decimal)273.15);
