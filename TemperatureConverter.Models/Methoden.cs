@@ -17,5 +17,10 @@ namespace TemperatureConverter.Models
         {
             return Convert.ToString(value + (decimal)273.15);
         }
+
+        public string KtoC(decimal value)
+        {
+            return Convert.ToString(value - (decimal)273.15);
+        }
     }
 }

@@ -50,7 +50,7 @@ namespace TemperatureConverter.GUI
                 numTemperature.Minimum = 0;
                 lblTempertureUnit.Text = "°K";
                 lblConvertedUnit.Text = "°C";
-                lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value - (decimal)273.15);
+                lblConvertedTemperature.Text = methoden.KtoC(numTemperature.Value);
             }
         }
 
