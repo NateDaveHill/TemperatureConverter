@@ -1,7 +1,11 @@
+using TemperatureConverter.Models;
+
 namespace TemperatureConverter.GUI
 {
     public partial class MainWindow : Form
     {
+        Methoden methoden = new Methoden();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -14,7 +18,7 @@ namespace TemperatureConverter.GUI
                 numTemperature.Minimum = (decimal) -273.15;
                 lblTempertureUnit.Text = "°C";
                 lblConvertedUnit.Text = "°F";
-                lblConvertedTemperature.Text = Convert.ToString(numTemperature.Value * 9 / 5 + 32);
+                lblConvertedTemperature.Text = methoden.CtoF(numTemperature.Value);
             }
         }
 
