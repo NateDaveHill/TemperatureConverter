@@ -156,6 +156,8 @@
             this.numTemperature.Name = "numTemperature";
             this.numTemperature.Size = new System.Drawing.Size(70, 27);
             this.numTemperature.TabIndex = 7;
+            this.numTemperature.Maximum = 999;
+            this.numTemperature.Minimum = -999;
             this.numTemperature.ValueChanged += new System.EventHandler(this.numTemperature_ValueChanged);
             // 
             // MainWindow
